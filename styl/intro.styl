@@ -1,0 +1,33 @@
+.intro
+    position relative
+    box-sizing border-box
+    height 721px
+    background-image url(../images/big-coockie-photo.jpg)
+    background-position 50% 0
+    background-repeat no-repeat
+    color #ffffff
+
+.intro__row
+    display flex
+
+.intro__half
+    width 50%
+
+.intro__text
+    position relative
+    top 70px
+    padding-top 120px
+    line-height 1.4
+    font-family 'Proxima Nova Lt', sans-serif
+    font-weight 600
+    font-size 29px
+    text-align left
+
+    &:after
+        absolute top 0 left -20px
+        content ''
+        background url(../images/arrow.png) 0 0 no-repeat
+        size(278px, 133px)
+
+.intro__button-holder
+    absolute bottom 100px left 0 right 0
