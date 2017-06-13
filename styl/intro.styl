@@ -5,13 +5,21 @@
     background-image url(../images/big-coockie-photo.jpg)
     background-position 50% 0
     background-repeat no-repeat
+    background-size cover
     color #ffffff
+
+    @media (max-width 749px)
+        height auto
 
 .intro__row
     display flex
+    @media (max-width 749px)
+        flex-direction column
 
 .intro__half
     width 50%
+    @media (max-width 749px)
+        width 100%
 
 .intro__text
     position relative
@@ -23,11 +31,28 @@
     font-size 29px
     text-align left
 
+    @media (max-width 749px)
+        top 0
+        font-size 22px
+        text-align center
+        padding-top 100px
+
     &:after
         absolute top 0 left -20px
         content ''
         background url(../images/arrow.png) 0 0 no-repeat
         size(278px, 133px)
 
+        @media (max-width 749px)
+            //width (278px/2)
+            //height (133px/2)
+            size((278px/2), (133px/2))
+            background-size 100% auto
+            left 50%
+            top 50px
+
 .intro__button-holder
     absolute bottom 100px left 0 right 0
+    @media (max-width 749px)
+        position static
+        margin-top 30px

@@ -2,10 +2,16 @@
     display flex
     justify-content space-between
     margin-top 35px
+    @media (max-width 749px)
+        flex-direction column
+        align-items center
 
 .about__feature
     max-width 240px
     padding 0 10px
+    @media (max-width 749px)
+        & + .about__feature
+            margin-top 30px
 
 .about__icon
     vertical-align top
