@@ -1,6 +1,9 @@
 {
   "name": "zamza-lp",
   "version": "1.0.0",
+  "scripts": {
+    "start": "gulp watch"
+  },
   "devDependencies": {
     "axis": "^1.0.0",
     "gulp": "^3.9.1",
